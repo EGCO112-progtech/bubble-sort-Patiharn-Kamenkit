@@ -35,10 +35,6 @@ void bubbleSort(int a[], int n) {
     for (j = 0; j < n - 1 - i; j++) {
       if (a[j] > a[j + 1]) {
         swap(&a[j], &a[j + 1]);
-        /*int t;
-        t=a[j];
-        a[j]=a[j+1];
-        a[j+1]=t;*/
         sorted = 1;
       }
       display(a, n);
