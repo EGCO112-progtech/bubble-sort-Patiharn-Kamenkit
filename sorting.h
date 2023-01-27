@@ -1,12 +1,13 @@
 // selection sort function module in C
-
+#include <stdio.h>
 void display(int a[], int n) {
 
   int i;
 
   for (i = 0; i < n; i++) {
-    printf("%5d\n", a[i]);
+    printf("%5d", a[i]);
   }
+  printf("\n");
 }
 
 void selectionSort(int data[], int length) {
@@ -30,7 +31,6 @@ void bubbleSort(int a[], int n) {
   int sorted;
   // how may pair to compare?
   for (i = 0; i < n - 1; i++) {
-    printf("ROUND %d\n", i);
     sorted = 0;
     for (j = 0; j < n - 1 - i; j++) {
       if (a[j] > a[j + 1]) {
