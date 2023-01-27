@@ -26,9 +26,11 @@ int main(int argc, char *argv[]) {
     }
   }
   n = j;
-  if (n == 0) {
+  if (n == 0) 
+  {
     printf("No prime number\n");
-  } else {
+  } 
+  else {
     display(prime, n);
     bubbleSort(prime, n);
     // insertion(a,N);
